@@ -2,3 +2,10 @@
 *.egg-info
 __pycache__
 *.pyc
+netlab/group_vars
+netlab/host_vars
+netlab/clab.yml
+netlab/ansible.cfg
+netlab/hosts.yml
+netlab/defaults.yml
+netlab/netlab.snapshot.yml

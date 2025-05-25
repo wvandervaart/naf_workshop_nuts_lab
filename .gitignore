@@ -7,5 +7,4 @@ netlab/host_vars
 netlab/clab.yml
 netlab/ansible.cfg
 netlab/hosts.yml
-netlab/defaults.yml
 netlab/netlab.snapshot.yml

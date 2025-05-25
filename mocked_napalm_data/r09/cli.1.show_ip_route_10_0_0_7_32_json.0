@@ -1,0 +1,28 @@
+{
+    "vrfs": {
+        "default": {
+            "routingDisabled": false,
+            "allRoutesProgrammedHardware": true,
+            "allRoutesProgrammedKernel": true,
+            "defaultRouteState": "notSet",
+            "routes": {
+                "10.0.0.7/32": {
+                    "hardwareProgrammed": true,
+                    "routeType": "ISISLevel2",
+                    "routeLeaked": false,
+                    "kernelProgrammed": true,
+                    "preference": 115,
+                    "metric": 20,
+                    "routeAction": "forward",
+                    "directlyConnected": false,
+                    "vias": [
+                        {
+                            "nexthopAddr": "10.1.0.61",
+                            "interface": "Ethernet2"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

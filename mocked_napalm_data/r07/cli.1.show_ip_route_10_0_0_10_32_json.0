@@ -1,0 +1,28 @@
+{
+    "vrfs": {
+        "default": {
+            "routingDisabled": false,
+            "allRoutesProgrammedHardware": true,
+            "allRoutesProgrammedKernel": true,
+            "defaultRouteState": "notSet",
+            "routes": {
+                "10.0.0.10/32": {
+                    "hardwareProgrammed": true,
+                    "routeType": "iBGP",
+                    "routeLeaked": false,
+                    "kernelProgrammed": true,
+                    "preference": 200,
+                    "metric": 0,
+                    "routeAction": "forward",
+                    "directlyConnected": false,
+                    "vias": [
+                        {
+                            "nexthopAddr": "10.1.0.62",
+                            "interface": "Ethernet3"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

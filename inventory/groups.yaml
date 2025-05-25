@@ -1,0 +1,14 @@
+---
+eos:
+  username: admin
+  # platform: eos
+  platform: mock  # Use the mock driver and not real devices
+  data: {}
+edge1:
+  data: {}
+edge2:
+  data: {}
+ospf:
+  data: {}
+isis:
+  data: {}

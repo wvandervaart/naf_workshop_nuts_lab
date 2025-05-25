@@ -1,0 +1,101 @@
+---
+r01:
+  hostname: 192.168.121.101
+  groups:
+    - eos
+    - edge1
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          path: mocked_napalm_data/r01
+r02:
+  hostname: 192.168.121.102
+  groups:
+    - eos
+    - ospf
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          path: mocked_napalm_data/r02
+r03:
+  hostname: 192.168.121.103
+  groups:
+    - eos
+    - ospf
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          path: mocked_napalm_data/r03
+r04:
+  hostname: 192.168.121.104
+  groups:
+    - eos
+    - ospf
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          path: mocked_napalm_data/r04
+r05:
+  hostname: 192.168.121.105
+  groups:
+    - eos
+    - ospf
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          path: mocked_napalm_data/r05
+r06:
+  hostname: 192.168.121.106
+  groups:
+    - eos
+    - isis
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          path: mocked_napalm_data/r06
+r07:
+  hostname: 192.168.121.107
+  groups:
+    - eos
+    - isis
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          path: mocked_napalm_data/r07
+r08:
+  hostname: 192.168.121.108
+  groups:
+    - eos
+    - isis
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          path: mocked_napalm_data/r08
+r09:
+  hostname: 192.168.121.109
+  groups:
+    - eos
+    - isis
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          path: mocked_napalm_data/r09
+r10:
+  hostname: 192.168.121.110
+  groups:
+    - eos
+    - edge2
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          path: mocked_napalm_data/r10

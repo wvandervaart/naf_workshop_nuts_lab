@@ -1,0 +1,70 @@
+{
+    "vrfs": {
+        "default": {
+            "isisInstances": {
+                "Gandalf": {
+                    "neighbors": {
+                        "0000.0000.0008": {
+                            "adjacencies": [
+                                {
+                                    "state": "up",
+                                    "circuitId": "73",
+                                    "routerIdV4": "0.0.0.0",
+                                    "interfaceName": "Ethernet2",
+                                    "lastHelloTime": 1748185456,
+                                    "level": "level-2",
+                                    "snpa": "P2P",
+                                    "hostname": "r08",
+                                    "details": {
+                                        "stateChanged": 1748181281,
+                                        "grSupported": "Supported",
+                                        "interfaceAddressFamily": "ipv4",
+                                        "srEnabled": false,
+                                        "advertisedHoldTime": 30,
+                                        "ip4Address": "10.1.0.50",
+                                        "neighborAddressFamily": "ipv4",
+                                        "areaIds": [
+                                            "49.0001"
+                                        ],
+                                        "bfdIpv4State": "adminDown",
+                                        "bfdIpv6State": "adminDown",
+                                        "grState": ""
+                                    }
+                                }
+                            ]
+                        },
+                        "0000.0000.0009": {
+                            "adjacencies": [
+                                {
+                                    "state": "up",
+                                    "circuitId": "6F",
+                                    "routerIdV4": "0.0.0.0",
+                                    "interfaceName": "Ethernet3",
+                                    "lastHelloTime": 1748185457,
+                                    "level": "level-2",
+                                    "snpa": "P2P",
+                                    "hostname": "r09",
+                                    "details": {
+                                        "stateChanged": 1748181281,
+                                        "grSupported": "Supported",
+                                        "interfaceAddressFamily": "ipv4",
+                                        "srEnabled": false,
+                                        "advertisedHoldTime": 30,
+                                        "ip4Address": "10.1.0.54",
+                                        "neighborAddressFamily": "ipv4",
+                                        "areaIds": [
+                                            "49.0001"
+                                        ],
+                                        "bfdIpv4State": "adminDown",
+                                        "bfdIpv6State": "adminDown",
+                                        "grState": ""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "vrfs": {
+        "default": {
+            "instList": {
+                "1": {
+                    "ospfNeighborEntries": [
+                        {
+                            "routerId": "10.0.0.3",
+                            "priority": 0,
+                            "drState": null,
+                            "interfaceName": "Ethernet2",
+                            "adjacencyState": "full",
+                            "inactivity": 1748190340.764819,
+                            "interfaceAddress": "10.1.0.10",
+                            "options": {
+                                "multitopologyCapability": false,
+                                "doNotUseInRouteCalc": false,
+                                "demandCircuitsSupport": false,
+                                "nssaCapability": false,
+                                "externalRoutingCapability": true,
+                                "opaqueLsaSupport": false,
+                                "linkLocalSignaling": false,
+                                "multicastCapability": false
+                            },
+                            "details": {
+                                "areaId": "0.0.0.0",
+                                "bfdState": "adminDown",
+                                "backupDesignatedRouter": "0.0.0.0",
+                                "stateTime": 1748181296.764857,
+                                "retransmissionCount": 0,
+                                "grLastRestartTime": null,
+                                "designatedRouter": "0.0.0.0",
+                                "grHelperTimer": null,
+                                "numberOfStateChanges": 7,
+                                "bfdRequestSent": false,
+                                "grNumAttempts": 0,
+                                "inactivityDefers": 0
+                            }
+                        },
+                        {
+                            "routerId": "10.0.0.4",
+                            "priority": 0,
+                            "drState": null,
+                            "interfaceName": "Ethernet4",
+                            "adjacencyState": "full",
+                            "inactivity": 1748190348.76529,
+                            "interfaceAddress": "10.1.0.18",
+                            "options": {
+                                "multitopologyCapability": false,
+                                "doNotUseInRouteCalc": false,
+                                "demandCircuitsSupport": false,
+                                "nssaCapability": false,
+                                "externalRoutingCapability": true,
+                                "opaqueLsaSupport": false,
+                                "linkLocalSignaling": false,
+                                "multicastCapability": false
+                            },
+                            "details": {
+                                "areaId": "0.0.0.0",
+                                "bfdState": "adminDown",
+                                "backupDesignatedRouter": "0.0.0.0",
+                                "stateTime": 1748181293.765315,
+                                "retransmissionCount": 2,
+                                "grLastRestartTime": null,
+                                "designatedRouter": "0.0.0.0",
+                                "grHelperTimer": null,
+                                "numberOfStateChanges": 7,
+                                "bfdRequestSent": false,
+                                "grNumAttempts": 0,
+                                "inactivityDefers": 0
+                            }
+                        },
+                        {
+                            "routerId": "10.0.0.3",
+                            "priority": 0,
+                            "drState": null,
+                            "interfaceName": "Ethernet3",
+                            "adjacencyState": "full",
+                            "inactivity": 1748190342.765743,
+                            "interfaceAddress": "10.1.0.14",
+                            "options": {
+                                "multitopologyCapability": false,
+                                "doNotUseInRouteCalc": false,
+                                "demandCircuitsSupport": false,
+                                "nssaCapability": false,
+                                "externalRoutingCapability": true,
+                                "opaqueLsaSupport": false,
+                                "linkLocalSignaling": false,
+                                "multicastCapability": false
+                            },
+                            "details": {
+                                "areaId": "0.0.0.0",
+                                "bfdState": "adminDown",
+                                "backupDesignatedRouter": "0.0.0.0",
+                                "stateTime": 1748181295.76577,
+                                "retransmissionCount": 0,
+                                "grLastRestartTime": null,
+                                "designatedRouter": "0.0.0.0",
+                                "grHelperTimer": null,
+                                "numberOfStateChanges": 7,
+                                "bfdRequestSent": false,
+                                "grNumAttempts": 0,
+                                "inactivityDefers": 0
+                            }
+                        },
+                        {
+                            "routerId": "10.0.0.4",
+                            "priority": 0,
+                            "drState": null,
+                            "interfaceName": "Ethernet5",
+                            "adjacencyState": "full",
+                            "inactivity": 1748190341.766165,
+                            "interfaceAddress": "10.1.0.22",
+                            "options": {
+                                "multitopologyCapability": false,
+                                "doNotUseInRouteCalc": false,
+                                "demandCircuitsSupport": false,
+                                "nssaCapability": false,
+                                "externalRoutingCapability": true,
+                                "opaqueLsaSupport": false,
+                                "linkLocalSignaling": false,
+                                "multicastCapability": false
+                            },
+                            "details": {
+                                "areaId": "0.0.0.0",
+                                "bfdState": "adminDown",
+                                "backupDesignatedRouter": "0.0.0.0",
+                                "stateTime": 1748181293.766191,
+                                "retransmissionCount": 1,
+                                "grLastRestartTime": null,
+                                "designatedRouter": "0.0.0.0",
+                                "grHelperTimer": null,
+                                "numberOfStateChanges": 7,
+                                "bfdRequestSent": false,
+                                "grNumAttempts": 0,
+                                "inactivityDefers": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

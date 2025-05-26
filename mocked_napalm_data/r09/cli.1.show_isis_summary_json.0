@@ -1,0 +1,65 @@
+{
+    "vrfs": {
+        "default": {
+            "isisInstances": {
+                "Gandalf": {
+                    "numActiveInterfaces": 5,
+                    "lspSizeMaxL2": 1492,
+                    "routerIdV4": "10.0.0.9",
+                    "spfInfo": {
+                        "spfMaxWaitInterval": 2,
+                        "spfCurrentHoldIntervalL1": 0,
+                        "spfHoldInterval": 1000,
+                        "spfCurrentHoldIntervalL2": 1000,
+                        "spfLastRunL2": 1748185440.090362,
+                        "spfInitialWaitInterval": 1000
+                    },
+                    "lspSizeMaxL1": 1492,
+                    "instanceId": 0,
+                    "attached": false,
+                    "hostName": "r09",
+                    "addressFamily": "ipv4",
+                    "redistRoutesMaxLimitL1": 0,
+                    "shortcutSpfForLdpTunneling": false,
+                    "preferenceInfo": {
+                        "internalV6PreferenceL2": 115,
+                        "internalV6PreferenceL1": 115,
+                        "internalV4PreferenceL1": 115,
+                        "internalV4PreferenceL2": 115
+                    },
+                    "lsdbSizeL2": 4,
+                    "multiTopologyAttached": false,
+                    "isType": "level2",
+                    "v6ShortcutSpfForIgp": false,
+                    "shortcutSpfForIgp": false,
+                    "authModeL1": "none",
+                    "gracefulRestart": false,
+                    "authModeL2": "none",
+                    "dynamicFloodingL2": false,
+                    "areaLeaderL1": "None",
+                    "csnpGenInterval": 10,
+                    "dynamicFloodingL1": false,
+                    "enabled": true,
+                    "areaLeaderL2": "None",
+                    "redistRoutesMaxLimitL2": 0,
+                    "lspGenInfo": {
+                        "lspGenMaxWaitInterval": 5,
+                        "lspGenInitialWaitInterval": 50,
+                        "lspGenHoldInterval": 50
+                    },
+                    "numDisInterfacesL2": 0,
+                    "multiTopologyEnabled": false,
+                    "systemId": "0000.0000.0009",
+                    "overloadBitSetL2": false,
+                    "areaIds": [
+                        "49.0001"
+                    ],
+                    "overloadBitSetL1": false,
+                    "redistRoutesCountL2": 0,
+                    "redistRoutesCountL1": 0,
+                    "gracefulRestartHelper": true
+                }
+            }
+        }
+    }
+}

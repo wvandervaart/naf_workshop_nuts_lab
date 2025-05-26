@@ -43,20 +43,39 @@ def collect_napalm_getters(task: Task) -> Result:
         with output.open("w") as fp:
             json.dump(response, fp, indent=2)
 
-    result_cmd = task.run(
+    # show ip route commands
+    result_show_route = task.run(
         napalm_cli,
         commands=[f"show ip route 10.0.0.{x}/32 | json" for x in range(1, 11)],
     )
 
     for i in range(1, 11):
         with (device_dir / f"cli.1.show_ip_route_10_0_0_{i}_32_json.0").open("w") as fp:
-            fp.write(result_cmd[0].result[f"show ip route 10.0.0.{i}/32 | json"])
+            fp.write(result_show_route[0].result[f"show ip route 10.0.0.{i}/32 | json"])
+    
+    # show isis and ospf 
+    result_show_isis = task.run(
+        napalm_cli,
+        commands=[
+            "show isis summary | json",
+            "show isis neighbors | json",
+            "show isis neighbors detail | json",
+            "show ip ospf neighbor summary | json",
+            "show ip ospf neighbor | json",
+            "show ip ospf | json",
+        ],
+    )
+
+    for command, response in result_show_isis[0].result.items():
+        output = device_dir / f"cli.1.{command.replace(' | ', '_').replace(' ', '_')}.0"
+        with output.open("w") as fp:
+            fp.write(response)
     
     return Result(host=task.host, result="Successful")
 
 
 def main(password: str = "admin", output_dir: str = "mocked_napalm_data", verbose: bool = False) -> None:
-    nr = InitNornir(config_file="config.yaml")
+    nr = InitNornir(config_file="nr-config.yaml")
     nr.inventory.defaults.password = password
     nr.inventory.defaults.data["output_dir"] = Path(output_dir)
 
@@ -71,4 +90,9 @@ def main(password: str = "admin", output_dir: str = "mocked_napalm_data", verbos
 
 
 if __name__ == "__main__":
+    """
+    update the inventory to use the eos driver and set the password
+    to admin, then run the script to create mocked data.
+    Because of SSL errors, I used tansport http instead of https.
+    """
     main()

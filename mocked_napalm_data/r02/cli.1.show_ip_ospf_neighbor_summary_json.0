@@ -1,0 +1,21 @@
+{
+    "vrfs": {
+        "default": {
+            "instList": {
+                "1": {
+                    "neighborSummary": {
+                        "numFull": 4,
+                        "numInit": 0,
+                        "numDown": 0,
+                        "numExchange": 0,
+                        "numExchStart": 0,
+                        "num2Ways": 0,
+                        "numAttempt": 0,
+                        "numGracefulRestart": 0,
+                        "numLoading": 0
+                    }
+                }
+            }
+        }
+    }
+}

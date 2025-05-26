@@ -1,0 +1,101 @@
+{
+    "vrfs": {
+        "default": {
+            "instList": {
+                "1": {
+                    "asbr": false,
+                    "lsaInformation": {
+                        "numLsa": 4,
+                        "lsaStartInterval": 100,
+                        "lsaMaxWaitInterval": 500,
+                        "lsaHoldInterval": 200,
+                        "lsaArrivalInterval": 100
+                    },
+                    "gracefulRestartInfo": {
+                        "gracefulRestart": false,
+                        "plannedOnly": false,
+                        "helperLooseLsaCheck": true,
+                        "gracePeriod": 120.0,
+                        "lastExitReason": "lastExitNone",
+                        "lastExitTime": null,
+                        "state": "none",
+                        "restartExpirationTime": null,
+                        "lastRestartReason": "Unknown",
+                        "restartDuration": null,
+                        "helperMode": true
+                    },
+                    "externalLsaInformation": {
+                        "asExternalCksum": 0,
+                        "treeSize": 0
+                    },
+                    "instanceId": 1,
+                    "spfInformation": {
+                        "spfStartInterval": 100,
+                        "spfMaxWaitInterval": 500,
+                        "spfCurrHoldInterval": 200,
+                        "spfHoldInterval": 200,
+                        "spfInterval": 0,
+                        "lastSpf": 71,
+                        "nextSpf": 0
+                    },
+                    "referenceBandwidth": 0,
+                    "opaqueLsaInformation": {
+                        "opaqueTreeSize": 0,
+                        "opaqueCksum": 0,
+                        "opaque": true
+                    },
+                    "tunnelRoutesEnabled": false,
+                    "numNormalAreas": 1,
+                    "maxLsaInformation": {
+                        "maxLsaCurrentIgnoreCount": 0,
+                        "maxLsaThreshold": 75,
+                        "maxLsaIgnoring": false,
+                        "maxLsaAllowedIgnoreCount": 5,
+                        "maxLsaWarningOnly": false,
+                        "maxLsa": 12000,
+                        "maxLsaResetTime": 5,
+                        "maxLsaIgnoreTime": 5
+                    },
+                    "ecmpMaximumNexthops": 128,
+                    "numBackboneNeighbors": 4,
+                    "adjacencyExchangeStartThreshold": 20,
+                    "areaList": {
+                        "0.0.0.0": {
+                            "normalArea": true,
+                            "lsaInformation": {
+                                "asExternalCksum": 171068,
+                                "treeSize": 4
+                            },
+                            "areaId": "0.0.0.0",
+                            "teEnabled": false,
+                            "dcClearCount": 0,
+                            "spfCount": 15,
+                            "opaqueLsaInformation": {
+                                "opaqueTreeSize": 0,
+                                "opaqueCksum": 0
+                            },
+                            "numIntf": 6,
+                            "indLsaCount": 0,
+                            "rangeList": {},
+                            "stubArea": false,
+                            "opaqueAreaLsaInformation": {
+                                "opaqueTreeSize": 0,
+                                "opaqueCksumSum": 0
+                            },
+                            "areaFiltersConfigured": false
+                        }
+                    },
+                    "numAreas": 1,
+                    "abr": false,
+                    "routerId": "10.0.0.4",
+                    "numStubAreas": 0,
+                    "shutDown": false,
+                    "numNssaAreas": 0,
+                    "lsaRetransmissionThreshold": 10,
+                    "floodPacing": 0,
+                    "vrf": "default"
+                }
+            }
+        }
+    }
+}

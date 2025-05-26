@@ -1,0 +1,99 @@
+{
+    "vrfs": {
+        "default": {
+            "isisInstances": {
+                "Gandalf": {
+                    "neighbors": {
+                        "0000.0000.0006": {
+                            "adjacencies": [
+                                {
+                                    "state": "up",
+                                    "circuitId": "6E",
+                                    "routerIdV4": "0.0.0.0",
+                                    "interfaceName": "Ethernet1",
+                                    "lastHelloTime": 1748185457,
+                                    "level": "level-2",
+                                    "snpa": "P2P",
+                                    "hostname": "r06",
+                                    "details": {
+                                        "stateChanged": 1748181281,
+                                        "grSupported": "Supported",
+                                        "interfaceAddressFamily": "ipv4",
+                                        "srEnabled": false,
+                                        "advertisedHoldTime": 30,
+                                        "ip4Address": "10.1.0.53",
+                                        "neighborAddressFamily": "ipv4",
+                                        "areaIds": [
+                                            "49.0001"
+                                        ],
+                                        "bfdIpv4State": "adminDown",
+                                        "bfdIpv6State": "adminDown",
+                                        "grState": ""
+                                    }
+                                }
+                            ]
+                        },
+                        "0000.0000.0007": {
+                            "adjacencies": [
+                                {
+                                    "state": "up",
+                                    "circuitId": "71",
+                                    "routerIdV4": "0.0.0.0",
+                                    "interfaceName": "Ethernet2",
+                                    "lastHelloTime": 1748185457,
+                                    "level": "level-2",
+                                    "snpa": "P2P",
+                                    "hostname": "r07",
+                                    "details": {
+                                        "stateChanged": 1748181281,
+                                        "grSupported": "Supported",
+                                        "interfaceAddressFamily": "ipv4",
+                                        "srEnabled": false,
+                                        "advertisedHoldTime": 30,
+                                        "ip4Address": "10.1.0.61",
+                                        "neighborAddressFamily": "ipv4",
+                                        "areaIds": [
+                                            "49.0001"
+                                        ],
+                                        "bfdIpv4State": "adminDown",
+                                        "bfdIpv6State": "adminDown",
+                                        "grState": ""
+                                    }
+                                }
+                            ]
+                        },
+                        "0000.0000.0008": {
+                            "adjacencies": [
+                                {
+                                    "state": "up",
+                                    "circuitId": "74",
+                                    "routerIdV4": "0.0.0.0",
+                                    "interfaceName": "Ethernet3",
+                                    "lastHelloTime": 1748185460,
+                                    "level": "level-2",
+                                    "snpa": "P2P",
+                                    "hostname": "r08",
+                                    "details": {
+                                        "stateChanged": 1748181281,
+                                        "grSupported": "Supported",
+                                        "interfaceAddressFamily": "ipv4",
+                                        "srEnabled": false,
+                                        "advertisedHoldTime": 30,
+                                        "ip4Address": "10.1.0.65",
+                                        "neighborAddressFamily": "ipv4",
+                                        "areaIds": [
+                                            "49.0001"
+                                        ],
+                                        "bfdIpv4State": "adminDown",
+                                        "bfdIpv6State": "adminDown",
+                                        "grState": ""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

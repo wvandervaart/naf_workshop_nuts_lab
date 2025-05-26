@@ -1,0 +1,139 @@
+name: netlab
+prefix: "clab"
+
+mgmt:
+  network: netlab_mgmt
+  ipv4-subnet: 192.168.121.0/24
+  # Note: 'start' not validated
+topology:
+  nodes:
+    r01:
+      mgmt-ipv4: 192.168.121.101
+      kind: ceos
+      env: {'INTFTYPE': 'et', 'CLAB_MGMT_VRF': 'management'}
+      image: ceos:4.33.1F
+      runtime: docker
+      group: edge1,as65001
+    r02:
+      mgmt-ipv4: 192.168.121.102
+      kind: ceos
+      env: {'INTFTYPE': 'et', 'CLAB_MGMT_VRF': 'management'}
+      image: ceos:4.33.1F
+      runtime: docker
+      group: ospf,as65100
+    r03:
+      mgmt-ipv4: 192.168.121.103
+      kind: ceos
+      env: {'INTFTYPE': 'et', 'CLAB_MGMT_VRF': 'management'}
+      image: ceos:4.33.1F
+      runtime: docker
+      group: ospf,as65100
+    r04:
+      mgmt-ipv4: 192.168.121.104
+      kind: ceos
+      env: {'INTFTYPE': 'et', 'CLAB_MGMT_VRF': 'management'}
+      image: ceos:4.33.1F
+      runtime: docker
+      group: ospf,as65100
+    r05:
+      mgmt-ipv4: 192.168.121.105
+      kind: ceos
+      env: {'INTFTYPE': 'et', 'CLAB_MGMT_VRF': 'management'}
+      image: ceos:4.33.1F
+      runtime: docker
+      group: ospf,as65100
+    r06:
+      mgmt-ipv4: 192.168.121.106
+      kind: ceos
+      env: {'INTFTYPE': 'et', 'CLAB_MGMT_VRF': 'management'}
+      image: ceos:4.33.1F
+      runtime: docker
+      group: isis,as65200
+    r07:
+      mgmt-ipv4: 192.168.121.107
+      kind: ceos
+      env: {'INTFTYPE': 'et', 'CLAB_MGMT_VRF': 'management'}
+      image: ceos:4.33.1F
+      runtime: docker
+      group: isis,as65200
+    r08:
+      mgmt-ipv4: 192.168.121.108
+      kind: ceos
+      env: {'INTFTYPE': 'et', 'CLAB_MGMT_VRF': 'management'}
+      image: ceos:4.33.1F
+      runtime: docker
+      group: isis,as65200
+    r09:
+      mgmt-ipv4: 192.168.121.109
+      kind: ceos
+      env: {'INTFTYPE': 'et', 'CLAB_MGMT_VRF': 'management'}
+      image: ceos:4.33.1F
+      runtime: docker
+      group: isis,as65200
+    r10:
+      mgmt-ipv4: 192.168.121.110
+      kind: ceos
+      env: {'INTFTYPE': 'et', 'CLAB_MGMT_VRF': 'management'}
+      image: ceos:4.33.1F
+      runtime: docker
+      group: edge2,as65002
+
+
+  links:
+  - endpoints:
+    - "r01:et1"
+    - "r02:et1"
+  - endpoints:
+    - "r01:et2"
+    - "r03:et1"
+  - endpoints:
+    - "r02:et2"
+    - "r03:et2"
+  - endpoints:
+    - "r02:et3"
+    - "r03:et3"
+  - endpoints:
+    - "r02:et4"
+    - "r04:et1"
+  - endpoints:
+    - "r02:et5"
+    - "r04:et2"
+  - endpoints:
+    - "r03:et4"
+    - "r05:et1"
+  - endpoints:
+    - "r03:et5"
+    - "r05:et2"
+  - endpoints:
+    - "r04:et3"
+    - "r05:et3"
+  - endpoints:
+    - "r04:et4"
+    - "r05:et4"
+  - endpoints:
+    - "r04:et5"
+    - "r06:et1"
+  - endpoints:
+    - "r05:et5"
+    - "r07:et1"
+  - endpoints:
+    - "r06:et2"
+    - "r08:et1"
+  - endpoints:
+    - "r06:et3"
+    - "r09:et1"
+  - endpoints:
+    - "r07:et2"
+    - "r08:et2"
+  - endpoints:
+    - "r07:et3"
+    - "r09:et2"
+  - endpoints:
+    - "r08:et3"
+    - "r09:et3"
+  - endpoints:
+    - "r08:et4"
+    - "r10:et1"
+  - endpoints:
+    - "r09:et4"
+    - "r10:et2"

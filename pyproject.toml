@@ -13,3 +13,5 @@ dependencies = [
     "nornir-utils>=0.2.0",
     "nuts>=3.5.0",
 ]
+[tool.pytest.ini_options]
+addopts = "--disable-warnings"

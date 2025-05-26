@@ -1,0 +1,10 @@
+- test_class: TestNapalmBgpNeighbors
+  test_data:
+    - host: r06
+      local_id: 10.0.0.6
+      local_as: 65200
+      peer: 10.0.0.7
+      remote_as: 65200
+      remote_id: 10.0.0.7
+      is_enabled: true
+      is_up: true
